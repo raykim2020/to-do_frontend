@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    outline: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Center the list */
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f3f5fc;
+    font-family: "Open Sans", sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .layout {
+    background: white;
+    border-radius: 9px;
+    border: 1px solid #e7ecfb;
+    box-shadow: 0 0 30px rgba(211, 220, 248, 0.3);
+    padding: 30px;
   }
-}
+  
+  h1,
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(23, 5, 58);
+    text-transform: capitalize;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+  
+  label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    color: #3f455f;
+  }
+  input {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 9px;
+    color: #666f99;
+    padding: 12px 60px 12px 18px;
+    background: #f3f5fc;
+  }
+  
+  li {
+    font-size: 20px;
+    color: rgb(23, 5, 58);
+    margin: 1rem 0;
+  }
+  
+  button,
+  .btn {
+    text-transform: uppercase;
+    background-color: rgb(23, 5, 58);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1.5rem;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.8px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+  }
+  
