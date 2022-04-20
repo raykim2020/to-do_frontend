@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         (async () => {
             try {
-                const response = await axios.get("http://localhost:3000/tasks/table")
+                const response = await axios.get("https://guarded-island-67904.herokuapp.com/tasks/table")
                 setTasks(response.data)
             } catch (err) {
                 console.log(err)
@@ -24,7 +24,7 @@ function App() {
 
     const handleClick = async (statusChange, id) => {
         try {
-            const response = await axios.put(`http://localhost:3000/tasks/${id}`, {
+            const response = await axios.put(`https://guarded-island-67904.herokuapp.com/tasks/${id}`, {
                 status: statusChange
             })
 
@@ -40,7 +40,7 @@ function App() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:3000/tasks/${id}`)
+            const response = await axios.delete(`https://guarded-island-67904.herokuapp.com/tasks/${id}`)
             if (response.status === 200) {
                 setButtonPressed(!buttonPressed)
             }
@@ -53,7 +53,7 @@ function App() {
         evt.preventDefault()
 
         try {
-            await axios.post('http://localhost:3000/tasks', {
+            await axios.post('https://guarded-island-67904.herokuapp.com/tasks', {
                 entry: entry.current.value,
             })
             setDidSubmit(!didSubmit)
